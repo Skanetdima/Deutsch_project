@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #6a8283;
+}
+.first_container,
+.second_container,
+.third_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4%;
+
+}
+.first_container h1{
+    color: #fff;
+    font-family: 'Roboto';
+    opacity: 0;
+    transform: translateX(110%);
+}
+.first_img,
+.second_img,
+.third_img{
+    max-width: 500px;
+    transform: translateX(-40px);
+    transition: .5s;
+    opacity: 0;
+    border-radius: 10px;
+    height: 400px;
+}
+.first_img_2,
+.second_img_2,
+.third_img_2
+{
+    border-radius: 10px;
+    max-width: 500px;
+    transform: translateX(40px);
+    opacity: 0;
+    transition: .5s;
+    height: 400px;
+}
+.logo_container{
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+}
+.logo_container img{
+    max-width: 50px;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.first_text_container,
+.second_text_container{
+    opacity: 0;
+    transform: translateY(20px);
+    margin-top: 2%;
+    max-width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+}
+/* SECOND CONTAINER */
+.second_images_container img{
+    max-width: 500px;
+    height: 370px;
+}
+/* THIRD CONTAINER */
+.third_container h3{
+    transform: translateX(10%);
+    opacity: 0;
+    transition: 0.5s;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+.third_container p{
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(20px);
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+.third_images_container img{
+    height: 370px;
+}
+/* LAST CONTAINER */
+.last_container{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Fasthand';
+    font-size: 20px;
+}
+.last_words{
+    opacity: 0;
+    transform: translate(10%, 5%);
+    transition: 0.5s;
+}
+.element_animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateX(0%);
+    transform: translateY(0%);          
+}
+
